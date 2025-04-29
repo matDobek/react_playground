@@ -1,10 +1,12 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import ReactDOM from 'react-dom/client'
 import './style.css'
-import Experience from './Experience.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Experience />
-  </StrictMode>,
+// import Experience from './Experience.jsx'
+import Experience from './rendering'
+
+const rootNode = document.getElementById('root')
+const root = ReactDOM.createRoot(rootNode)
+
+root.render(
+  <Experience />
 )
